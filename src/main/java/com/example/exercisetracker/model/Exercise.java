@@ -39,6 +39,9 @@ public class Exercise {
         return user;
     }
 
+    public void setId (long id){
+        this.id = id;
+    }
     public void setType(String type){
         this.type = type;
     }

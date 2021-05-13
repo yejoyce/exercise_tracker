@@ -29,6 +29,11 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
 
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello Controller";
+    }
+
     @GetMapping("/users")
     public ResponseEntity<List<User>> getAllUsers(
             @RequestParam(required = false) String name) {
